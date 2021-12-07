@@ -8,54 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- PAGE TITLE (shown in tab at the top of the browser) -->
     <title>Coco's Portfolio</title>
-    <!-- LINK TO BOOTSTRAP CSS STYLESHEET -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
     <!-- LINK TO LOCAL CSS STYLESHEET -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand logo" href="#home">Coco<br/>Michelle</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="nav">
+        <ul class="navbar-nav">
+            <a class="navbar-brand logo" href="#home">Coco<br/>Michelle</a>
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        </ul>
+    </div>
 
     <!-- INTRO -->
-    <div id="home" class="p-5 mb-4 bg-light rounded-3">
-      <div class="container-fluid py-5">
-        <div class="row">
-          <div class="col-md-8">
+      <div id="home" class="grid-container">
+          <div class="item1">
             <h1 class="display-5 fw-bold title">Hi! I'm Courtney Christian.</h1>
+            <hr>
             <h3 class="col-md-8 fs-4">
               I am a Software Developer currently living in Philadelphia, Pa.
               <br />
@@ -72,20 +49,18 @@
               Please take a look at my website and feel free to
               <a class="link" href="#contact">Contact Me</a>.
             </p>
-            <button class="btn btn-primary btn-lg" type="button">
-              Contact
+            <button class="btn" type="button">
+                <a href="#contact">Contact</a>
             </button>
           </div>
-          <div class="col-md-4">
+          <div class="item2">
             <img
             class="coco"
               src="coco.jpeg"
               alt="coco's photo"
             />
           </div>
-        </div>
       </div>
-    </div>
    
 
   <!-- PARALLAX DIVIDER -->
@@ -93,24 +68,23 @@
 
   <!-- ABOUT -->
   <section id="about" class="about">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4">
+      <div class="grid-container">
+              <div class="item1">
                 <img
                 class="coco"
                   src="photo8.jpg"
                   alt="philly photo"
                 />
               </div>
-              <div class="col-md-8">
+              <div class="item2">
                   <h2 class="subtitle">About Courtney</h2>
+                  <hr>
                   <p>In 2011, I became an Americorp member and then a computer support specialist and worked with beginners and professionals. While I love fixing computers, I also found that I really enjoyed putting together mobile and web applications for small businesses.</p>
               
-                  <p>As a student at <a class="link" href="http://thinkful.com">Thinkful</a>, I'm continuing my journey to becoming a better software developer and couldn't be happier!</a>
+                  <p>As a student at <a class="link" href="http://thinkful.com">Thinkful</a>, I'm continuing my journey to becoming a better software developer and couldn't be happier!</p>
               
                   <p>If you're looking to hire a developer (or are looking for a partner for a hackathon) please reach out! I am so excited to work with other developers to build great software.</p>
             </div>
-          </div>
       </div>
 </section>
 
@@ -119,33 +93,30 @@
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+    <div class="grid-container">
+            <div class="item1">
 
                 <h2 class="subtitle">Contact Courtney</h2>
+                <hr>
                 <p>I'd love to hear from you! Please feel free to contact or follow me:</p>
                 <ol>
                   <li><a class="link" href="https://linkedin.com/in/courtneymchristian">LinkedIn</a></li>
                   <li><a class="link" href="https://github.com/Coco89">GitHub</a></li>
                 </ol>
             </div>
-            <div class="col-md-6">
+            <div class="item2">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d49039.95269449149!2d-75.2352619!3d39.7392305!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x876b80aa231f17cf%3A0x118ef4f8278a36d6!2sPhiladelphia%2C%20Pennsylvania!3m2!1d39.739235799999996!2d-104.990251!4m0!5e0!3m2!1sen!2sus!4v1583178471146!5m2!1sen!2sus" height="250" allowfullscreen=""></iframe>
           </div>
-        </div>
     </div>
   </section>
 
   <!-- **** Footer **** -->
   <footer class="footer mt-auto py-3 bg-dark">
-    <div class="container foot">
-      <div class="container">
-        <div class="row">
-          <div class="col">
+      <div class="grid-container">
+          <div class="item1">
             <h5 class="footer-title">Be In<br />Touch</h5>
           </div>
-          <div class="col">
+          <div class="item2">
             <p class="two footer-text">
               1234 Benjamin Franklin Parkway Philadelphia, PA 19103<br />
             </p>
@@ -153,38 +124,27 @@
               Tel 123-456-7890, Fax 123-456-7890<br />
             </p>
             <p class="two footer-text">
-              © 2021 by Coco Michelle. Proudly created by <a class="link" href="www.cocomichelle.me" target="_blank">www.cocomichelle.me</a>
+              © 2021 by Coco Michelle. Proudly created by <a class="link2" href="www.cocomichelle.me" target="_blank">www.cocomichelle.me</a>
             </p>
           </div>
-          <div class="col">
-            <div class="container">
-              <div class="row">
-                <div class="col">
+          <div class="item3">
                   <div class="social">
                     <a href="https://www.facebook.com" target="_blank">
-                      <img class="fb" src="facebook.png" />
+                      <img class="fb" src="facebook.png" alt="facebook icon" />
                     </a>
                   </div>
-                </div>
-                <div class="col">
+
                   <div class="social">
                     <a href="https://www.twitter.com" target="_blank">
-                      <img class="tw" src="twitter.jpg" />
+                      <img class="tw" src="twitter.jpg" alt="twitter icon" />
                     </a>
                   </div>
-                </div>
-                <div class="col">
                   <div class="social">
                     <a href="https://www.instagram.com" target="_blank">
-                      <img class="ig" src="instagram.png" />
+                      <img class="ig" src="instagram.png" alt="instagram icon" />
                     </a>
                   </div>
-                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </footer>
 
