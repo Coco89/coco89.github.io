@@ -101,11 +101,13 @@ p, li, h3 {
 }
 
 .link {
-  color: var(--dark-gray);
+  color: var(--darkest-gray);
+  font-weight: 900;
 }
 
 .link2 {
     color: var(--white);
+    font-weight: 900;
 }
 
 .btn {
