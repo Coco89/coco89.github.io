@@ -23,15 +23,6 @@
 }
 
 /* NavBar */
-
-.logo {
-  font-family: Meow;
-  font-size: 30px;
-  text-decoration: none;
-  margin: auto;
-  color: var(--tertiary) !important;
-}
-
 ul.navbar-nav {
   list-style-type: none;
   margin: 0;
@@ -108,18 +99,6 @@ p, li, h3 {
 .link2 {
     color: var(--white);
     font-weight: 900;
-}
-
-.btn {
-  font-family: MPlus;
-  text-transform: uppercase;
-  background-color: var(--secondary);
-  border-color: var(--secondary);
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
 }
 
 a {
